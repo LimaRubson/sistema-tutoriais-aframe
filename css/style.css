@@ -1,0 +1,375 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#math, #portuguese {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.loader-line {
+  display: block;
+  height: 8px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  /* margin-top: -8px;
+  margin-bottom: 41px;*/
+}
+.loader-line:before{
+  display: block;
+  position: absolute;
+  content: "";
+  left: -200px;
+  width: 200px;
+  height: 8px;
+  background-color: 	#EF2D5F;
+  animation: loading 3s linear infinite;
+}
+
+@keyframes loading {
+    from {left: -200px; width: 30%;}
+    50% {width: 30%;}
+    70% {width: 70%;}
+    80% { left: 50%;}
+    95% {left: 120%;}
+    to {left: 100%;}
+}
+
+#preloader {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: #5DBCD2;
+  z-index:999
+}
+.loader {
+  display: block;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #EF2D5F;
+  border-right: 16px solid gold;
+  border-bottom: 16px solid blue;
+  border-left: 16px solid white;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: -15%; bottom: 0;
+  left: 0; right: 0;
+  margin: auto;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+.style-horizontal-line {
+  display: none;
+  height: 8px;
+  color: 	#EF2D5F;
+  background: 	#EF2D5F;
+}
+* {
+    box-sizing: border-box;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}  
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  #myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #24C9FF;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(235, 25, 77);
+    display: block
+  }
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+  .style-title-sondagem-cbv {
+      text-align: center;
+      color: #EF2D5F;
+      font-size: 30px;
+  }
+  .style-subtitle-sondagem-cbv {
+      text-align: center;
+      color: #EF2D5F;
+      font-size: 20px;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: #24C9FF;
+    text-align: center;
+    padding: 5px;
+ }
+ .style-position-copy-footer {
+   margin-top: 100px;
+ }
+.style-image-topnav {
+    width: 100%;
+ }
+.style-image-boletim {
+  width: 100%;
+ }
+ .style-horizontal-line-boletim {
+    height: 8px;
+    width: 100%;
+    color: darkgreen;
+    background: darkgreen;
+    margin-bottom: 60px;
+ }
+ .style-image-footer {
+   width: 60%;
+ }
+ .style-text-copy-footer {
+   font-family: Verdana, sans-serif;
+   font-weight: bolder;
+ }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .style-chart-sondagem-matematica {
+      /*margin: 0 auto;*/
+      /*width: 900px;
+      height: 500px;  */
+      width: 100%;
+  }
+  .style-name-student {
+    text-align: center;
+    color: gray;
+  }
+  .style-title-necessary-habilities {
+    text-align: center;
+  }
+  .style-title-sondagem-matematica {
+      text-align: center;
+      color: gray;
+  }
+  .style-subtitle-sondagem-matematica {
+      text-align: center;
+      color: darkgray;
+  }
+  #videoExample {
+    text-align: center;
+  }
+  #videoExample > iframe {
+    width: 280px;
+    height: 157.5px;
+  }
+  .style-oque-sondagem-matematica {
+    text-align: left;
+    color: gray;
+  }
+  .style-sondagem-matematica-unidade-ano-turma {
+      text-align: center;
+      color: darkgreen;
+      font-size: 25px;
+  }
+  .style-container-habilities {
+    padding: 15px;
+    border: 1px solid black;
+  }
+  .style-necessary-habilities {
+    color: red;
+  }
+  .icon-style-p1 {
+      width: 20px;
+      height: 20px;
+      background-color: blue;
+      float: left;
+  }
+  .style-text-p1 {
+      font-size: 22px;
+      color: gray;
+      margin: 0px 10px 10px 30px;
+      margin-top: 0px;
+  }
+  .icon-style-p2 {
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      float: left;
+  }
+  .style-text-p2 {
+      font-size: 22px;
+      color: gray;
+      margin: 0px 10px 10px 30px;
+      margin-top: 0px;
+  }
+  .icon-style-p3 {
+      width: 20px;
+      height: 20px;
+      background-color: yellow;
+      float: left;
+  }
+  .style-text-p3 {
+      font-size: 22px;
+      color: gray;
+      margin: 0px 10px 10px 30px;
+  }
+  .icon-style-total {
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      float: left;
+  }
+  .style-text-total {
+      font-size: 22px;
+      color: transparent;
+      margin: 0px 10px 10px 220px;
+  }
+  .style-container-p1 {
+      float: left;
+  }
+  .style-container-p2 {
+      float: left;
+  }
+  .style-container-p3 {
+      float: left;
+  }
+  .style-container {
+      margin-left: 180px;
+      margin-bottom: -10px;
+  }
+  
+  @media (min-width: 768px) {
+
+      #videoExample > iframe {
+        width: 560px;
+        height: 315px;
+      }
+  
+   }
+
+
+   /* Styles tutoriais A-Frame */
+
+   .steps {
+     text-align: center;
+     color: #24C9FF;
+   }
+   div.responsive-imgs img {
+    display: block;
+    margin: 5px auto;
+    max-width: 100%;
+   }
+   .description {
+      text-align: center;
+   }
